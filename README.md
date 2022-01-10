@@ -3,12 +3,12 @@ Automating the zoom with the google sheet to reduce the efforts in downloading a
 
 
 Challenge
-This is also the case for my company and my Church’s bible study organisation. In the case of my bible study activities, we usually would take attendance. When it was done in person, it was easy as we were broken up to a few classes. But, since we moved to Zoom, a few classes and sometimes, all of them are combined in one Zoom bible study session.
+This is also the case for my company. In the case of zoom clases, we usually would take attendance. When it was done in person, it was easy as we were broken up to a few classes. But, since we moved to Zoom, a few classes and sometimes, all of them are combined in one Zoom.
 This presented a challenge in terms of taking attendance as people might join and leave at different times, requiring the class leaders to keep monitoring the list of participants. It is really difficult to do and it would mean that the class leaders are probably not going to be able to pay attention to the session, itself.
 
 
 Solution
-Now, since I am a Dev, myself, I took the liberty of looking into Zoom API and thought I could automate it all. So the class leaders do not have to manually take the attendance, but rather just wait for my report to be generated after each of the bible study classes.
+Now, since I am a Dev, myself, I took the liberty of looking into Zoom API and thought I could automate it all. So the class leaders do not have to manually take the attendance, but rather just wait for my report to be generated after each of the classes.
 The Zoom API is quite simple and straight forward to implement. The API that I use is the report meeting participants API. It does require a Zoom pro account, but fortunately, my organisation decided to subscribe to it as we are going to be using it for a while. So, no dramas there. 😃
 I chose Python as the programming language to use as it is very convenient and definitely made for this type of task. So first, my Python program will call the Zoom API to fetch the list of meeting participants. Then, using Pandas library, it will transform and simplify the data to a human friendly, readable tabular format. Finally, I am using the Google API to store the final report in a Google Sheets, which is made accessible to the class leaders who need to see the attendance report.
 
